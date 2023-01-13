@@ -1,0 +1,57 @@
+{
+    "manifest_version": 1,
+    "version": 1,
+    "type": "APP",
+    "name": { 
+        "ja": "活性非活性プラグイン",
+        "en": "sample plugin",
+        "zh": "插件的例子"
+    },
+    "description": { 
+        "ja": "これは活性非活性プラグインです。",
+        "en": "This is sample plugin.",
+        "zh": "这是插件的例子"
+    },
+    "icon": "image/icon.png",
+    "homepage_url": { 
+        "ja": "https://example.com/jp/",
+        "en": "https://example.com/en-us/",
+        "zh": "https://example.com/cn/"
+    },
+    "desktop": {
+        "js": [
+            "https://js.cybozu.com/jquery/1.11.1/jquery.min.js",
+            "js/kintone-config-helper.js",
+            "js/customize.js"
+            
+        ],
+        "css": [
+            "css/customize.css"
+        ]
+    },
+    "mobile": {
+        "js": [
+            "https://js.cybozu.com/jquery/1.11.1/jquery.min.js",
+            "js/mobile-customize.js"
+        
+        ],
+        "css": [
+        
+            "css/customize.css"
+        ]
+    },
+    "config": {
+        "html": "html/config.html",
+       
+        "js": [
+            "https://js.kintone.com/jquery/3.3.1/jquery.min.js",
+            "js/kintone-config-helper.js",
+            "js/config.js"
+        ],
+        "css": [
+            "css/config.css"
+            
+        ],
+        "required_params": ["many_text_datas"]
+    }
+}
